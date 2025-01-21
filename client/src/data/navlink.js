@@ -1,21 +1,20 @@
 const navlinks = [
     {
-        name: "Dashbaords",
-        link: '/'
+      name: "Dashboard",
+      link: '/dashboard'
     },
     {
-        name: "Business Partners",
-        link: '/businesspartner'
+      name: "Business Partners",
+      link: '/dashboard/businesspartner'
     },
     {
-        name: "Business Promoters",
-        link: '/businesspromoter'
+      name: "Business Promoters",
+      link: '/dashboard/businesspromoter'
     },
     {
-        name: "Logout",
-        link: '/login'
-    },
-
+      name: "Logout",
+      link: '/'
+    }
 ];
 
 export default navlinks;

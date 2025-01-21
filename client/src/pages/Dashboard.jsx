@@ -1,9 +1,7 @@
-import React from 'react'
-
-import DashboardHeader from '../components/DashboardHeader'
-import AsideBar from '../components/AsideBar'
-import DashbordBody from '../components/DashbordBody'
-import DashbordData from '../components/DashbordData'
+import React from 'react';
+import DashboardHeader from '../components/DashboardHeader';
+import AsideBar from '../components/AsideBar';
+import { Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
@@ -11,7 +9,7 @@ const Dashboard = () => {
             <AsideBar />
             <section className='col-span-3 bg-white rounded-xl p-4'>
                 <DashboardHeader />
-                <DashbordBody content={<DashbordData />} />
+                <Outlet />
             </section>
         </main>
     )
